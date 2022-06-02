@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="port" value="4724"/>
+    <parameter name="platformVersion" value="11"/>
+    <parameter name="deviceName" value="vivo 1907"/>
+    <parameter name="UDID" value="6HHQUKEU6H59R4ZD"/>
+    <classes>
+      <class name="drivermethods.ParallelExecutionApiDemos">
+        <methods>
+          <include name="parallel2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- drivermethods.ParallelExecutionApiDemos -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="port" value="4723"/>
+    <parameter name="platformVersion" value="11"/>
+    <parameter name="deviceName" value="vivo 1920"/>
+    <parameter name="UDID" value="942cc0e8"/>
+    <classes>
+      <class name="drivermethods.ParallelExecutionApiDemos">
+        <methods>
+          <include name="parallel2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- drivermethods.ParallelExecutionApiDemos -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
